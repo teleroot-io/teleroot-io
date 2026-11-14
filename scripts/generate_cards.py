@@ -81,7 +81,7 @@ def build_stats(stats, updated):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-label="GitHub stats for {USER}">',
-        chrome(width, height, "./stats --all"),
+        chrome(width, height, "~/stats.sh"),
         f'  <text x="{margin}" y="84" font-family="{FONT}" font-size="18" fill="{GREEN}">'
         f'&gt;_ ./stats --all</text>',
         f'  <text x="{width - margin}" y="84" font-family="{FONT}" font-size="11" '
@@ -129,7 +129,7 @@ def build_langs(langs, updated):
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
         f'viewBox="0 0 {width} {height}" role="img" aria-label="Top languages for {USER}">',
-        chrome(width, height, "./stack --languages"),
+        chrome(width, height, "~/stack.sh"),
         f'  <text x="28" y="84" font-family="{FONT}" font-size="18" fill="{GREEN}">'
         f'&gt;_ ls ./stack --languages</text>',
         f'  <text x="{width - 28}" y="84" font-family="{FONT}" font-size="11" '
