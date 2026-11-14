@@ -73,7 +73,7 @@ def chrome(width, height, title):
   <line x1="0" y1="46" x2="{width}" y2="46" stroke="{GREEN}" stroke-opacity="0.14"/>"""
 
 
-def build_stats(stats, updated):
+def build_stats(stats, updated, scope="PUBLIC DATA", note=""):
     width, height = 880, 300
     cells = len(stats)
     margin = 28
@@ -85,7 +85,7 @@ def build_stats(stats, updated):
         f'  <text x="{margin}" y="84" font-family="{FONT}" font-size="18" fill="{GREEN}">'
         f'&gt;_ ./stats --all</text>',
         f'  <text x="{width - margin}" y="84" font-family="{FONT}" font-size="11" '
-        f'fill="{DIM}" text-anchor="end">PUBLIC DATA</text>',
+        f'fill="{DIM}" text-anchor="end">{scope}</text>',
     ]
     for i, (label, value) in enumerate(stats):
         cx = margin + cell_w * i + cell_w / 2
@@ -109,7 +109,7 @@ def build_stats(stats, updated):
     )
     parts.append(
         f'  <text x="{margin}" y="258" font-family="{FONT}" font-size="11" fill="{DIM}">'
-        f'updated {updated}</text>'
+        f'updated {updated}' + (f'  ·  {note}' if note else '') + '</text>'
     )
     parts.append(
         f'  <text x="{margin}" y="278" font-family="{FONT}" font-size="11" fill="{GREEN}">'
@@ -170,7 +170,15 @@ def build_langs(langs, updated):
 
 def main():
     user = api(f"/users/{USER}")
-    repos = [r for r in api(f"/users/{USER}/repos?per_page=100&type=owner") if not r.get("fork")]
+    # With a token that can read private repositories the authenticated
+    # endpoint returns them too; only aggregate numbers reach the card.
+    list_path = (
+        "/user/repos?per_page=100&affiliation=owner&visibility=all"
+        if TOKEN
+        else f"/users/{USER}/repos?per_page=100&type=owner"
+    )
+    repos = [r for r in api(list_path) if not r.get("fork")]
+    private_count = sum(1 for r in repos if r.get("private"))
 
     stars = sum(r.get("stargazers_count", 0) for r in repos)
     commits = total_count(f"commits?q=author:{USER}&per_page=1",
@@ -198,8 +206,10 @@ def main():
     ]
 
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    scope = "PUBLIC + PRIVATE" if private_count else "PUBLIC DATA"
+    note = f"incl. {private_count} private" if private_count else ""
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    (OUT_DIR / "stats.svg").write_text(build_stats(stats, updated), encoding="utf-8")
+    (OUT_DIR / "stats.svg").write_text(build_stats(stats, updated, scope, note), encoding="utf-8")
     (OUT_DIR / "langs.svg").write_text(build_langs(langs, updated), encoding="utf-8")
     print(f"wrote {OUT_DIR / 'stats.svg'}")
     print(f"wrote {OUT_DIR / 'langs.svg'}")

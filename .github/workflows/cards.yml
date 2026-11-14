@@ -23,13 +23,27 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Generate SVG cards
+      - name: Check stats token
+        id: token
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$STATS_TOKEN" ]; then
+            echo "STATS_TOKEN is not set - keeping committed cards untouched."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate SVG cards
+        if: steps.token.outputs.skip != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.STATS_TOKEN }}
           GITHUB_USER: teleroot-io
         run: python scripts/generate_cards.py
 
       - name: Commit refreshed cards
+        if: steps.token.outputs.skip != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
