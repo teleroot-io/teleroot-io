@@ -6,7 +6,7 @@
 
 <a href="https://t.me/teleroot"><img src="https://img.shields.io/badge/Telegram-%40teleroot-0D1117?style=for-the-badge&logo=telegram&logoColor=00FF41" alt="Telegram" /></a>
 <a href="https://teleroot-io.github.io/telesite/"><img src="https://img.shields.io/badge/telesite-online-0D1117?style=for-the-badge&logo=githubpages&logoColor=00FF41" alt="telesite" /></a>
-<img src="https://komarev.com/ghpvc/?username=teleroot-io&label=VISITORS&color=00FF41&style=for-the-badge" alt="visitors" />
+<img src="https://komarev.com/ghpvc/?username=teleroot-io&label=VISITORS&color=00FF41&labelColor=0D1117&style=for-the-badge" alt="visitors" />
 
 </div>
 
@@ -34,25 +34,15 @@ archer@github:~$ ./whoami.sh
 
 **Языки**
 
-<img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/Bash-0D1117?style=for-the-badge&logo=gnubash&logoColor=00FF41" />
+<img src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&logo=python&logoColor=00FF41" /> <img src="https://img.shields.io/badge/JavaScript-0D1117?style=for-the-badge&logo=javascript&logoColor=00FF41" /> <img src="https://img.shields.io/badge/TypeScript-0D1117?style=for-the-badge&logo=typescript&logoColor=00FF41" /> <img src="https://img.shields.io/badge/Bash-0D1117?style=for-the-badge&logo=gnubash&logoColor=00FF41" />
 
 **Боты и данные**
 
-<img src="https://img.shields.io/badge/aiogram-0D1117?style=for-the-badge&logo=telegram&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/Telegram%20Bot%20API-0D1117?style=for-the-badge&logo=telegram&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/Node.js-0D1117?style=for-the-badge&logo=nodedotjs&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/SQLite-0D1117?style=for-the-badge&logo=sqlite&logoColor=00FF41" />
+<img src="https://img.shields.io/badge/aiogram-0D1117?style=for-the-badge&logo=telegram&logoColor=00FF41" /> <img src="https://img.shields.io/badge/Telegram%20Bot%20API-0D1117?style=for-the-badge&logo=telegram&logoColor=00FF41" /> <img src="https://img.shields.io/badge/Node.js-0D1117?style=for-the-badge&logo=nodedotjs&logoColor=00FF41" /> <img src="https://img.shields.io/badge/SQLite-0D1117?style=for-the-badge&logo=sqlite&logoColor=00FF41" />
 
 **Инфраструктура**
 
-<img src="https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&logo=linux&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/Docker-0D1117?style=for-the-badge&logo=docker&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/systemd-0D1117?style=for-the-badge&logo=linux&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/nginx-0D1117?style=for-the-badge&logo=nginx&logoColor=00FF41" />
-<img src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=00FF41" />
+<img src="https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&logo=linux&logoColor=00FF41" /> <img src="https://img.shields.io/badge/Docker-0D1117?style=for-the-badge&logo=docker&logoColor=00FF41" /> <img src="https://img.shields.io/badge/systemd-0D1117?style=for-the-badge&logo=linux&logoColor=00FF41" /> <img src="https://img.shields.io/badge/nginx-0D1117?style=for-the-badge&logo=nginx&logoColor=00FF41" /> <img src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&logo=git&logoColor=00FF41" />
 
 ## `>_ ./stats --all`
 
