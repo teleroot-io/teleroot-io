@@ -58,12 +58,9 @@ archer@github:~$ ./whoami.sh
 
 <div align="center">
 
-<table>
-<tr>
-<td><img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=teleroot-io&show_icons=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9&ring_color=00FF41" alt="GitHub stats" /></td>
-<td><img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=teleroot-io&layout=compact&langs_count=6&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=C9D1D9" alt="Top languages" /></td>
-</tr>
-</table>
+<img width="100%" src="assets/stats.svg" alt="GitHub stats for teleroot-io" />
+
+<img width="100%" src="assets/langs.svg" alt="Top languages by code size" />
 
 <img src="https://streak-stats.demolab.com?user=teleroot-io&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideLabels=C9D1D9&dates=8B949E&currStreakNum=C9D1D9&sideNums=C9D1D9" alt="Streak" />
 
@@ -71,24 +68,11 @@ archer@github:~$ ./whoami.sh
 
 ## `>_ ls /projects`
 
-<table>
-<tr>
-<td width="55%" valign="top">
-
 **`telesite`** — терминальный сайт-визитка: ASCII-интерфейс, переключение цветовых схем и живой «system monitor» на чистом JS.
 
-`JavaScript` · `CSS` · `HTML`
+`JavaScript` · `CSS` · `HTML` · ★ 1
 
 [`./open_site`](https://teleroot-io.github.io/telesite/) · [`./source`](https://github.com/teleroot-io/telesite)
-
-</td>
-<td width="45%">
-
-<a href="https://github.com/teleroot-io/telesite"><img src="https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=teleroot-io&repo=telesite&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=C9D1D9" alt="telesite" /></a>
-
-</td>
-</tr>
-</table>
 
 Остальные проекты — Telegram-боты, парсеры и внутренняя автоматизация — живут в приватных репозиториях.
 
