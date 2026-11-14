@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="276" viewBox="0 0 880 276" role="img" aria-label="Top languages for teleroot-io">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="310" viewBox="0 0 880 310" role="img" aria-label="Top languages for teleroot-io">
   <defs>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24" fill="none" stroke="#00FF41" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="880" height="276" rx="14" fill="#0D1117"/>
-  <rect width="880" height="276" rx="14" fill="url(#grid)"/>
-  <rect x="0.5" y="0.5" width="879" height="275" rx="13.5" fill="none" stroke="#00FF41" stroke-opacity="0.32"/>
+  <rect width="880" height="310" rx="14" fill="#0D1117"/>
+  <rect width="880" height="310" rx="14" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="879" height="309" rx="13.5" fill="none" stroke="#00FF41" stroke-opacity="0.32"/>
   <circle cx="26" cy="25" r="5" fill="#FF5F57" fill-opacity="0.8"/>
   <circle cx="44" cy="25" r="5" fill="#FEBC2E" fill-opacity="0.8"/>
   <circle cx="62" cy="25" r="5" fill="#28C840" fill-opacity="0.8"/>
@@ -17,15 +17,19 @@
   <text x="852" y="84" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8B949E" text-anchor="end">BY CODE SIZE</text>
   <text x="28" y="127" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#C9D1D9">JavaScript</text>
   <rect x="170" y="115" width="560" height="12" rx="6" fill="#00FF41" fill-opacity="0.10"/>
-  <rect x="170" y="115" width="254.6" height="12" rx="6" fill="#00FF41"/>
-  <text x="852" y="126" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E" text-anchor="end">45.5%</text>
+  <rect x="170" y="115" width="206.1" height="12" rx="6" fill="#00FF41"/>
+  <text x="852" y="126" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E" text-anchor="end">36.8%</text>
   <text x="28" y="161" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#C9D1D9">CSS</text>
   <rect x="170" y="149" width="560" height="12" rx="6" fill="#00FF41" fill-opacity="0.10"/>
-  <rect x="170" y="149" width="200.5" height="12" rx="6" fill="#2BE65B"/>
-  <text x="852" y="160" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E" text-anchor="end">35.8%</text>
-  <text x="28" y="195" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#C9D1D9">HTML</text>
+  <rect x="170" y="149" width="162.3" height="12" rx="6" fill="#2BE65B"/>
+  <text x="852" y="160" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E" text-anchor="end">29.0%</text>
+  <text x="28" y="195" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#C9D1D9">Python</text>
   <rect x="170" y="183" width="560" height="12" rx="6" fill="#00FF41" fill-opacity="0.10"/>
-  <rect x="170" y="183" width="104.9" height="12" rx="6" fill="#5CD97A"/>
-  <text x="852" y="194" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E" text-anchor="end">18.7%</text>
-  <text x="28" y="254" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8B949E">updated 2026-11-14 10:36 UTC</text>
+  <rect x="170" y="183" width="106.7" height="12" rx="6" fill="#5CD97A"/>
+  <text x="852" y="194" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E" text-anchor="end">19.0%</text>
+  <text x="28" y="229" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#C9D1D9">HTML</text>
+  <rect x="170" y="217" width="560" height="12" rx="6" fill="#00FF41" fill-opacity="0.10"/>
+  <rect x="170" y="217" width="84.9" height="12" rx="6" fill="#8CCC99"/>
+  <text x="852" y="228" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#8B949E" text-anchor="end">15.2%</text>
+  <text x="28" y="288" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8B949E">updated 2026-11-14 10:36 UTC</text>
 </svg>
