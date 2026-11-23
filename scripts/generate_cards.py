@@ -17,6 +17,7 @@ USER = os.environ.get("GITHUB_USER", "teleroot-io")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 API = "https://api.github.com"
 OUT_DIR = Path(__file__).resolve().parent.parent / "assets"
+STATE_FILE = "cards-state.json"
 
 BG = "#0D1117"
 FG = "#C9D1D9"
@@ -201,20 +202,40 @@ def main():
             bytes_by_lang[name] = bytes_by_lang.get(name, 0) + size
     grand_total = sum(bytes_by_lang.values()) or 1
     langs = [
-        (name, size * 100 / grand_total)
+        (name, round(size * 100 / grand_total, 1))
         for name, size in sorted(bytes_by_lang.items(), key=lambda kv: kv[1], reverse=True)[:5]
     ]
 
-    updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     scope = "PUBLIC + PRIVATE" if private_count else "PUBLIC DATA"
     note = f"incl. {private_count} private" if private_count else ""
+    data = {
+        "stats": [[label, value] for label, value in stats],
+        "langs": [[name, pct] for name, pct in langs],
+        "scope": scope,
+        "note": note,
+    }
+
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    state_path = OUT_DIR / STATE_FILE
+    svg_paths = [OUT_DIR / "stats.svg", OUT_DIR / "langs.svg"]
+    try:
+        previous = json.loads(state_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        previous = None
+
+    print(f"stats: {stats}")
+    print(f"langs: {langs}")
+    if previous == data and all(path.exists() for path in svg_paths):
+        print("cards unchanged - nothing written")
+        return
+
+    updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     (OUT_DIR / "stats.svg").write_text(build_stats(stats, updated, scope, note), encoding="utf-8")
     (OUT_DIR / "langs.svg").write_text(build_langs(langs, updated), encoding="utf-8")
+    state_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {OUT_DIR / 'stats.svg'}")
     print(f"wrote {OUT_DIR / 'langs.svg'}")
-    print(f"stats: {stats}")
-    print(f"langs: {[(n, round(p, 1)) for n, p in langs]}")
+    print(f"wrote {state_path}")
 
 
 if __name__ == "__main__":

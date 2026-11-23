@@ -1,0 +1,52 @@
+{
+  "stats": [
+    [
+      "REPOSITORIES",
+      "4"
+    ],
+    [
+      "STARS",
+      "1"
+    ],
+    [
+      "FOLLOWERS",
+      "2"
+    ],
+    [
+      "COMMITS",
+      "20"
+    ],
+    [
+      "PULL REQUESTS",
+      "0"
+    ],
+    [
+      "ISSUES",
+      "0"
+    ]
+  ],
+  "langs": [
+    [
+      "HTML",
+      69.1
+    ],
+    [
+      "JavaScript",
+      16.8
+    ],
+    [
+      "TypeScript",
+      9.6
+    ],
+    [
+      "Python",
+      4.3
+    ],
+    [
+      "CSS",
+      0.3
+    ]
+  ],
+  "scope": "PUBLIC + PRIVATE",
+  "note": "incl. 2 private"
+}
