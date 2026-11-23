@@ -33,6 +33,6 @@
   <text x="783.3" y="170" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="34" font-weight="700" fill="#00FF41" text-anchor="middle">0</text>
   <text x="783.3" y="196" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#8B949E" letter-spacing="1.6" text-anchor="middle">ISSUES</text>
   <line x1="28" y1="228" x2="852" y2="228" stroke="#00FF41" stroke-opacity="0.12"/>
-  <text x="28" y="258" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8B949E">updated 2026-11-23 18:57 UTC  ·  incl. 2 private</text>
+  <text x="28" y="258" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8B949E">updated 2026-11-23 19:01 UTC  ·  incl. 2 private</text>
   <text x="28" y="278" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#00FF41"><tspan fill="#8B949E">$</tspan> ./refresh --cron daily  <tspan fill="#8B949E"># github actions</tspan></text>
 </svg>
